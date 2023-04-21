@@ -1,0 +1,22 @@
+Tabella: AutoUsate
+
+id - SMALLINT	Identificatore univoco dell'auto, chiave primaria con attributi AUTO_INCREMENT e NOT NULL
+marca -	VARCHAR(50)	Marca dell'auto, NOT NULL
+modello - VARCHAR(50) Modello dell'auto, NOT NULL
+anno -	SMALLINT Anno di produzione dell'auto, NOT NULL
+chilometraggio - MEDIUMINT Chilometraggio dell'auto, NOT NULL
+prezzo - DECIMAL(10,2) Prezzo di vendita dell'auto, NOT NULL
+descrizione - TEXT Descrizione dell'auto, NULL
+targa -	VARCHAR(10)	Targa dell'auto, NULL, UNIQUE
+immagine - VARCHAR(255) URL dell'immagine dell'auto, NULL
+venduta - TINYINT(1) Indica se l'auto è stata venduta o meno, NOT NULL
+colore_esterno - VARCHAR(50) Colore esterno dell'auto, NULL
+colore_interno - VARCHAR(50) Colore interno dell'auto, NULL
+tipo_carburante - ENUM('Benzina', 'Diesel', 'Ibrido', 'Elettrico') Tipo di carburante dell'auto, NOT NULL
+tipo_cambio - ENUM('Manuale', 'Automatico')	Tipo di cambio dell'auto, NOT NULL
+aria_condizionata - TINYINT(1) Indica se l'auto ha l'aria condizionata o meno, NOT NULL
+cilindrata - INT(10) - Cilindrata del motore dell'auto, NULL
+potenza - SMALLINT - Potenza del motore dell'auto, NULL
+proprietari - TINYINT(2) - Numero di proprietari precedenti dell'auto, NULL
+vin - VARCHAR(50)	Numero di identificazione del veicolo (VIN) dell'auto, UNIQUE, NOT NULL
+condizioni - ENUM('Ottimo', 'Buono', 'Sufficiente', 'Da riparare')	Condizioni generali dell'auto, NOT NULL
